@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function dropDown(id) {
+				document.getElementById(id).classList.toggle("show");
+			}
+		
+			window.onclick = function(event) {
+				if (!event.target.matches('.dropbtn')) {
+
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Paul Revere & The Raiders</title>
+	</head>
+
+	<body>
+		<div class="sidenav">
+			<p>
+			<h2>See More!</h2>
+				<ul>
+					<li><a href="https://en.wikipedia.org/wiki/Paul_Revere_%26_the_Raiders" target="_blank">Wikipedia</a></li>
+					<li><a href="https://www.allmusic.com/artist/paul-revere-the-raiders-mn0000750456/discography" target="_blank">All Music</a></li>
+					<li><a href="https://www.discogs.com/artist/252481-Paul-Revere-The-Raiders" target="_blank">Discogs</a></li>
+					<li><a href="https://rateyourmusic.com/artist/paul-revere-and-the-raiders" target="_blank">Rate Your Music</a></li>
+				</ul>
+			</p>
+			<p>
+			<h2>Buy Some!</h2>
+				<ul>
+					<li><a href="https://www.amazon.com/Paul-Revere-The-Raiders/e/B000AQ30QU/ref=dp_byline_cont_music_1" target="_blank">Amazon</a></li>
+				</ul>
+			</p>	
+		</div>
+		<div class="header">
+			<img alt="Singles CD cover" width= 150px height=150px src="https://cdn.shopify.com/s/files/1/1923/4961/products/revere-columbia_530x@2x.jpg?v=1495592286"/>
+			
+			<p><h1>Paul Revere & The Raiders</h1></p>
+		
+			<p><h2>The Legendary Years:</h2></p>
+		</div>
+		
+		<div class="main">
+			<img id="band" alt="band photo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Paul_Revere_and_the_Raiders_1967.JPG/220px-Paul_Revere_and_the_Raiders_1967.JPG" />
+		
+			<div id="info">
+				If you can look past the silly outfits, the cheesy comedy and the goofy on-stage antics, you'll see that 
+				for brief time in the mid-sixties one particular line-up of Paul Revere & The Raiders was possibly the
+				best American rock band of the age.  Combining garage-rock aesthetics and psychedelic-rock style the 
+				band melded a musical image that meshed perfectly with the vocal style of singer Mark Lindsay and the
+				songs, written by both band members and outside songwriters, to push the band to the top of the charts.
+		
+			</div>
+
+			<p>
+			<h3>Members:</h3>
+	
+				<ul>
+					<li><div class="dropdown">
+							<button onclick="popUp('paulRevere')" class="dropbtn">Paul Revere</button>
+							<div id="paulRevere" class="dropdown-content">
+								<a href="https://simple.wikipedia.org/wiki/Paul_Revere_(musician)" target="_blank">
+									<img src="http://musoscribe.com/images/raiders/paul_revere.jpg" alt="Paul Revere" height="300px" width="195px">
+								</a>
+							</div>
+						</div>
+					</li>		
+					<li><div class="dropdown">
+							<button onclick="dropDown('markLindsay')" class="dropbtn">Mark Lindsay</button>
+							<div id="markLindsay" class="dropdown-content">
+								<a href="https://en.wikipedia.org/wiki/Mark_Lindsay" target="_blank">
+									<img src="https://i.pinimg.com/564x/5c/8f/4c/5c8f4c606689840b3864a6135cfba567.jpg" alt="Mark Lindsay" height="358px" width="250px">
+								</a>
+							</div>
+						</div>
+					</li>	
+					<li><div class="dropdown">
+							<button onclick="dropDown('mikeSmith')" class="dropbtn">Mike "Smitty" Smith</button>
+							<div id="mikeSmith" class="dropdown-content">
+								<a href="https://www.allmusic.com/artist/mike-smith-mn0000764577" target="_blank">
+									<img src="http://mikesmittysmith.tripod.com/OurCandidatelite.jpg" alt="Mike 'Smitty' Smith" height="350px" width="201px">
+								</a>
+							</div>
+						</div>
+					</li>
+					<li><div class="dropdown">
+							<button onclick="dropDown('drakeLevin')" class="dropbtn">Drake "Kid" Levin</button>
+							<div id="drakeLevin" class="dropdown-content">
+								<a href="https://en.wikipedia.org/wiki/Drake_Levin" target="_blank">
+									<img src="http://www.philfangvolk.com/Images/DrakeLevin.jpg" alt="Drake 'Kid' Levin" height="348px" width="303px">
+								</a>
+							</div>
+						</div>
+					</li>
+					<li><div class="dropdown">
+							<button onclick="dropDown('philVolk')" class="dropbtn">Phil "Fang" Volk</button>
+							<div id="philVolk" class="dropdown-content">
+								<a href="https://en.wikipedia.org/wiki/Phil_Volk" target="_blank">
+									<img src="http://www.philfangvolk.com/Images/fangchair.jpg" alt="Phil 'Fang' Volk" height="385px" width="250px">
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</p>
+	
+	
+			<h3>Discography:</h3>
+			<p>
+				<table>
+					<tr>
+						<th>Title</th>
+						<th>Year</th>
+						<th>Position</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="dropdown">
+								<button onclick="dropDown('hereCome')" class="dropbtn">Here They Come</button>
+								<div id="hereCome" class="dropdown-content">
+									<ol>
+										<li>You Can't Sit Down</li>
+										<li>Money (That's What I Want)</li>
+										<li>Louie, Louie</li>
+										<li>Do You Love Me</li>
+										<li>Big Boy Pete</li>
+										<li>Oo Poo Pah Doo</li>
+										<li>Sometimes</li>
+										<li>Gone</li>
+										<li>These Are Bad Times (For Me And My Baby)</li>
+										<li>Fever</li>
+										<li>Time Is On My Side</li>
+										<li>A Kiss To Remember You By</li>
+									</ol>
+								</div>
+							</div>
+						</td>
+						<td>1965</td>
+						<td>#71</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="dropdown">
+								<button onclick="dropDown('justLikeUs')" class="dropbtn">Just Like Us!</button>
+								<div id="justLikeUs" class="dropdown-content">
+									<ol>
+										<li>Steppin' Out</li>
+										<li>Doggone</li>
+										<li>Out Of Sight</li>
+										<li>Baby, Please Don't Go</li>
+										<li>I Know</li>
+										<li>Night Train</li>
+										<li>Just Like Me</li>
+										<li>Catch The Wind</li>
+										<li>(I Can't Get No) Satisfaction</li>
+										<li>I'm Crying</li>
+										<li>New Orleans</li>
+										<li>Action</li>
+									</ol>
+								</div>
+							</div>
+						</td>
+						<td>1966</td>
+						<td>#5</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="dropdown">
+								<button onclick="dropDown('midnightRide')" class="dropbtn">Midnight Ride</button>
+								<div id="midnightRide" class="dropdown-content">
+									<ol>
+										<li>Kicks</li>
+										<li>There's Always Tomorrow</li>
+										<li>Little Girl In The 4th Row</li>
+										<li>Ballad Of A Useless Man</li>
+										<li>(I'm Not Your) Steppin' Stone</li>
+										<li>There She Goes</li>
+										<li>All I Really Need Is You</li>
+										<li>Get It On</li>
+										<li>Louie, Go Home</li>
+										<li>Take A Look At Yourself</li>
+										<li>Melody For An Unknown Girl</li>
+									</ol>
+								</div>
+							</div>
+						</td>
+						<td>1966</td>
+						<td>#9</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="dropdown">
+								<button onclick="dropDown('spirit')" class="dropbtn">The Spirit Of '67</button>
+								<div id="spirit" class="dropdown-content">
+									<ol>
+										<li>Good Thing</li>
+										<li>All About Her</li>
+										<li>In My Community</li>
+										<li>Louise</li>
+										<li>Why? Why? Why? (Is It So Hard)</li>
+										<li>Oh! To Be A Man</li>
+										<li>Hungry</li>
+										<li>Undecided Man</li>
+										<li>Our Candidate</li>
+										<li>1001 Arabian Nights</li>
+										<li>The Great Airplane Strike</li>
+									</ol>
+								</div>
+							</div>
+						</td>
+						<td>1966</td>
+						<td>#9</td>
+					</tr>	
+					<tr>
+						<td>
+							<div class="dropdown">
+								<button onclick="dropDown('revolution')" class="dropbtn">Revolution!</button>
+								<div id="revolution" class="dropdown-content">
+									<ol>
+										<li>Him Or Me (What's It Gonna Be?)</li>
+										<li>Reno</li>
+										<li>Upon Your Leaving</li>
+										<li>Mo'reen</li>
+										<li>Wanting You</li>
+										<li>Gone - Movin' On</li>
+										<li>Tighter</li>
+										<li>Make It With Me</li>
+										<li>Ain't Nobody Who Can Do It Like Leslie Can</li>
+										<li>I Hear A Voice</li>
+									</ol>
+								</div>
+							</div>
+						</td>
+						<td>1967</td>
+						<td>#25</td>
+					</tr>
+		
+				</table>	
+			</p>
+			<hr width="90%">
+			<p>
+				<iframe frameborder="0" width="480" height="270" src="https://www.dailymotion.com/embed/video/x2vp8ih" allowfullscreen allow="autoplay"marginwidth="100px"></iframe>
+			</p>
+		</div>
+    </body>
+</html>
